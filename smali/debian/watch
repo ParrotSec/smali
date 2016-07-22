@@ -1,0 +1,6 @@
+version=3
+# only for automatic check of new releases
+# use https://bitbucket.org/JesusFreke/smali/downloads to create the
+# package
+opts="uversionmangle=s/v(\d.*)(b|beta|alpha)/$1~$2/" \
+https://github.com/JesusFreke/smali/releases .*/v(\d.*)\.tar\.gz

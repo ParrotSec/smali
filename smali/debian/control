@@ -1,0 +1,19 @@
+Source: smali
+Section: utils
+Priority: extra
+Maintainer: Devon Kearns <dookie@kali.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/JesusFreke/smali
+Vcs-Git: git://git.kali.org/packages/smali.git
+Vcs-Browser: http://git.kali.org/gitweb/?p=packages/smali.git;a=summary
+
+Package: smali
+Architecture: all
+Depends: ${misc:Depends}, default-jre
+Description: Assembler/disassembler for Android's dex format
+ smali/baksmali is an assembler/disassembler for the dex 
+ format used by dalvik, Android's Java VM implementation. 
+ The syntax is loosely based on Jasmin's/dedexer's syntax, 
+ and supports the full functionality of the dex format 
+ (annotations, debug info, line info, etc.) 
